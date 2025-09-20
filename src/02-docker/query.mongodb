@@ -1,0 +1,3 @@
+use("Produc_stores")
+
+db.productos.find()
