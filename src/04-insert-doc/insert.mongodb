@@ -1,0 +1,11 @@
+use("Nuevos_productos")
+
+db.productos.insertOne({
+    name: "licuadora",
+    price: 2000
+})
+
+db.productos.insertOne({
+    name: "air frayer",
+    price: 3500
+})
