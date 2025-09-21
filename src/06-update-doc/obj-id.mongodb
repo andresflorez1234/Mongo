@@ -1,0 +1,12 @@
+use("Nuevos_productos")
+
+db.productos.updateOne(
+    //query
+    {_id: ObjectId("68cf637c4e66eceb7cb0648c")},
+    
+    {
+        $inc: {
+            price: 1,
+        }
+    }
+)

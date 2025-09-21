@@ -1,0 +1,14 @@
+use("Nuevos_productos")
+
+db.productos.updateOne(
+    //query
+    {_id: 2},
+    //{name:"paila fritadera"}
+    {
+        $set: {
+            name:"paila firtadora",
+            price: 4789
+        }
+    }
+);
+

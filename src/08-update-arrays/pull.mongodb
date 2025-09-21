@@ -1,0 +1,16 @@
+use("Nuevos_productos")
+
+//db.productos.updateOne({}, {
+//    $pull: {
+//        tags: "book"
+//    }
+//})
+
+// remove others elements from array
+db.productos.updateOne({}, {
+    $pull: {
+        tags:{
+            $in: ["school"]
+        }
+    }
+})

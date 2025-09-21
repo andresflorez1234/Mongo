@@ -1,0 +1,7 @@
+use("Nuevos_productos")
+
+db.productos.updateOne({_id: 4}, {
+    $push: {
+        tags: "headphone"
+    }
+})
