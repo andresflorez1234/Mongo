@@ -1,0 +1,2 @@
+use("Nuevos_productos")
+db.iot.find()
