@@ -17,7 +17,7 @@ use("Nuevos_productos")
 db.inventory.find({ qty: { $lt: 20 } })
 
 // TrNuevos_productoss valores 15 y 20 del documento y excluiria todos los otros valores
-use("platzi_store")
+use("Nuevos_productos")
 db.inventory.find({ qty: { $lte: 20 } })
 
 // Join - Traer todo los archivos que sean Mayor igual 25 y Menor igual 35 = El resultado debe ser 25 y 30
