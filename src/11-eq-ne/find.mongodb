@@ -1,0 +1,3 @@
+use("Nuevos_productos")
+
+db.inventory.find()
