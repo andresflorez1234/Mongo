@@ -1,0 +1,7 @@
+use("Nuevos_productos")
+
+//db.inventory.find({ qty: {$in: [20, 25]} })
+//db.inventory.find({ tags: {$in: ["book", "electronics"]} })
+
+// $nin, values & arrays
+db.inventory.find({ qty: {$in: [20, 25]} })
