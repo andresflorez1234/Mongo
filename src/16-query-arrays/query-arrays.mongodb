@@ -14,3 +14,10 @@ use("Nuevos_productos")
 //db.inventory.find({tags:["book","book"]})
 
 // arrays $all
+//db.inventory.find({tags:{$all:["school", "book"]}})
+
+// $size
+//db.survey.find({tags:{$size:2}})
+
+// $elemMatch
+db.survey.find({ results: {$elemMatch:{ product: "xyz", score: {$gte: 7}}}})
